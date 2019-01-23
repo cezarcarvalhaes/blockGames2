@@ -66,8 +66,8 @@ footer.page-footer {
 }
 .cardIMG img {
   background: #222;
-  height: 620;
-  width:350;
+  height: 500;
+  max-width: 600px; ;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
