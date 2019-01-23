@@ -40,7 +40,7 @@ function Card2(props) {
                 width="350"
               />
             }
-            actions={[<a href={<Link to="/Checkout" />}>Checkout</a>]}
+            actions={<Link to="/Checkout">Checkout</Link>}
           >
             <p>{props.description}</p>
           </Card>

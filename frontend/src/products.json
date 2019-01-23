@@ -1,26 +1,28 @@
 [
     {
-      "id": 1,
-      "name": "Torn Tales",
+      
+      "title": "Torn Tales",
+      "developer": "Unknown",
+      "description": "Lead your party of 3 heroes on their quest to repair the torn pages of folklore. Evil has destroyed the tales you love. Hack monsters and slash enemies throughout the Torn Tales in this real time squad based RPG.",
       "image":
         "https://hb.imgix.net/9c5ee6bd2f3919971429c3f93f2cd3d60a9f9535.jpg?auto=compress,format&fit=crop&h=353&w=616&s=7f1ee2f3c5c892a7d4799105184a51ef",
-      "title": "Torn Tales",
-      "description": "Lead your party of 3 heroes on their quest to repair the torn pages of folklore. Evil has destroyed the tales you love. Hack monsters and slash enemies throughout the Torn Tales in this real time squad based RPG."
+      "key": "subject to change",
+      "rating": "T"
+      
+      
+     
     },
     {
-      "id": 2,
+      
       "name": "Nihilumbra",
+      "developer":"Unknown",
+      "description": "Discover the beautiful world of Nihilumbra and join Born on his adventure to find himself whilst trying to escape from his inevitable curse. Born was created from the absolute nothingness: The Void. But somehow he separates himself from the black emptiness and appears in the world.",
       "image":
         "https://nindienexus.net/wp-content/uploads/2018/05/NihilumbraFeatured-1024x576.jpg",
-      "title": "Nihilumbra",
-      "description": "Discover the beautiful world of Nihilumbra and join Born on his adventure to find himself whilst trying to escape from his inevitable curse. Born was created from the absolute nothingness: The Void. But somehow he separates himself from the black emptiness and appears in the world."
-    },
-    {
-      "id": 3,
-      "name": "Squidward",
-      "image":
-        "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-      "occupation": "Cashier",
-      "location": "An Easter Island Head"
+      "key": "subject to change",
+      "rating":"T"
+      
+      
     }
+
   ]

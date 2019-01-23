@@ -64,7 +64,7 @@ footer.page-footer {
 .parent {
   background-color: #222
 }
-.cardIMG img {
+.cardParent img {
   background: #222;
   height: 500;
   max-width: 600px; ;

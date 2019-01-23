@@ -27,6 +27,7 @@ import MediaCard from "./components/Card/card";
 import Form from "./components/Form/form";
 import products from "./products.json"
 import Card2 from "./components/Card/card2"
+
 // import Products from "./components/pages/product"
 const Index = () => <h2>Home</h2>;
 //
@@ -43,6 +44,8 @@ const Products = () => (
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Select a product to purchase!</h2>
         </div>
+       
+  
       </div>
       <div className="listings">
        <Card2 
@@ -55,6 +58,9 @@ const Products = () => (
        title={products[1].title}
        description = {products[1].description}
        />
+       <Button>
+       <Link to="/Checkout/">Checkout</Link>
+       </Button>
       </div>
     </div>
     <div>
