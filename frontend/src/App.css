@@ -43,12 +43,10 @@ nav {
 footer.page-footer {
   background-color: #222;
   display: flex;
-
 }
 .intro {
   background-color: #222;
   height: 170px;
-
 }
 .slider {
   background-color: #222;
@@ -58,19 +56,32 @@ footer.page-footer {
 }
 .card-stacked {
   background-color: #222;
-  color:white;
-  
+  color: white;
 }
 .parent {
-  background-color: #222
+  background-color: #222;
 }
 .cardParent img {
   background: #222;
   height: 500;
-  max-width: 600px; ;
+  max-width: 600px;
+}
+.jumbo {
+  text-align: center;
+  color: aliceblue;
+}
+.btc {
+  text-align: center;
+}
+.USD {
+  text-align: center;
+  padding: 20px;
 }
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
