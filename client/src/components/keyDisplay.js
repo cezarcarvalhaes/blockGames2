@@ -1,42 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import App from "../App";
+import "../App.css";
 import logo from "../blockchain.svg";
-import Card2 from "./Card/card2";
-import API from "../API";
-import {
-  Button,
-  Icon,
-  Card,
-  Col,
-  CardTitle,
-  Slider,
-  Footer,
-  Slide,
-  Navbar,
-  NavItem
-} from "react-materialize";
-import products from "../products.json";
+import { Footer } from "react-materialize"
+import Recaptcha from "./recaptcha";
+import { Button } from "reactstrap";
 
-
-class Products extends React.Component {
- state= {
-   games: []
- }
- componentDidMount() {
-   API.getGames().then(
-     function(res) {
-           console.log(res);
-           this.setState(
-             {
-               games: res.data
-             }
-           )
-    }
-  
-   )
- }
-
+class keyDisplay extends React.Component {
   render() {
     return (
       <div className="parent">
@@ -44,13 +15,11 @@ class Products extends React.Component {
           <div className="App-header">
             <div className="svgs">
               <img src={logo} className="App-logo" alt="logo" />
-              <h2>Select a product to purchase!</h2>
+              <h2>Press Button To see your key</h2>
             </div>
           </div>
-          <div className="listings">
-            <Card2 image={products[0].image} title={products[0].title} description={products[0].description} />
-            <Card2 image={products[1].image} title={products[1].title} description={products[1].description} />
-            <Card2 image = {products[2].image} title={products[2].title} description={products[2].description}/>
+          <div className="recap">
+          <Recaptcha />
           </div>
         </div>
         <div>
@@ -62,7 +31,7 @@ class Products extends React.Component {
               </a>
             }
             links={
-              <ul>
+                <ul>
                 <li>
                   <a className="grey-text text-lighten-3" href="https://www.linkedin.com/in/timothy-dolan-023682127/">
                     LinkedIn 
@@ -99,4 +68,4 @@ class Products extends React.Component {
   }
 }
 
-export default Products;
+export default keyDisplay;

@@ -44,27 +44,27 @@ class Users extends React.Component {
             }
             links={
               <ul>
-                <li>
-                  <a className="grey-text text-lighten-3" href="#!">
-                    LinkedIn (not complete)
-                  </a>
-                </li>
-                <li>
-                  <a className="grey-text text-lighten-3" href="#!">
-                    Github (not complete)
-                  </a>
-                </li>
-                <li>
-                  <a className="grey-text text-lighten-3" href="#!">
-                    sources (not complete)
-                  </a>
-                </li>
-                <li>
-                  <a className="grey-text text-lighten-3" href="#!">
-                    etc. (not complete)
-                  </a>
-                </li>
-              </ul>
+              <li>
+                <a className="grey-text text-lighten-3" href="https://www.linkedin.com/in/timothy-dolan-023682127/">
+                  LinkedIn 
+                </a>
+              </li>
+              <li>
+                <a className="grey-text text-lighten-3" href="https://github.com/tdolan21/blockGames2">
+                  Github 
+                </a>
+              </li>
+              <li>
+                <a className="grey-text text-lighten-3" href="#!">
+                  sources 
+                </a>
+              </li>
+              <li>
+                <a className="grey-text text-lighten-3" href="https://international.bittrex.com/">
+                  purchase BTC! 
+                </a>
+              </li>
+            </ul>
             }
             className="example"
           >

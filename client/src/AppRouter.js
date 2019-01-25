@@ -33,6 +33,9 @@ import Products from "./components/product";
 import Payments from "./components/payments";
 
 import Users from "./components/users";
+import Information from "./components/information";
+import LoginView from "./components/loginview";
+import keyDisplay from "./components/keyDisplay";
 // import Products from "./components/pages/product"
 class AppRouter extends React.Component{
  state = {
@@ -54,6 +57,12 @@ render(){
           <li>
             <Link to="/Users/">Users</Link>
           </li>
+          <li>
+            <Link to="/Information/">Information</Link>
+          </li>
+          <li id="login">
+            <Link to="/login">Login</Link>
+          </li>
         </ul>
       </nav>
 
@@ -61,6 +70,9 @@ render(){
       <Route path="/Products" component={Products} />
       <Route path="/Users" component={Users} />
       <Route path="/Checkout" component={Payments} />
+      <Route path="/Information" component={Information} />
+      <Route path="/login" component={LoginView}/>
+      <Route path="/keyDisplay" component={keyDisplay}/>
     </div>
   </Router>
   )

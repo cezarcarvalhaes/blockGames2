@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import logo from "../blockchain.svg";
 import {
-  Button,
   Icon,
   Card,
   Col,
@@ -20,9 +19,10 @@ import Crypto from "./crypto";
 import CheckoutField from "./checkoutField";
 import Checkout from "../Checkout";
 
-// import { Jumbotron } from "reactstrap";
-// import { Container } from "reactstrap";
+import { Jumbotron } from "reactstrap";
+import { Container } from "reactstrap";
 import CryptoTracker from "./cryptotracker";
+import { Button } from "reactstrap";
 
 class Payments extends React.Component {
   render() {
@@ -39,23 +39,23 @@ class Payments extends React.Component {
             <div className="parent">
               <div className="checkoutForm">
                 <div className="instuctions">
-                  
-                    <div className="jumbo">
-                      {/* <Jumbotron>
-                        <h1>Hello, world!</h1>
-                        <p>
-                          This is a simple hero unit, a simple jumbotron-style
-                          component for calling extra attention to featured
-                          content or information.
-                        </p>
-                        <p>
-                          
-                        </p>
-                      </Jumbotron> */}
-                    </div>
-                  
+                  <div className="jumbo">
+                    <Jumbotron>
+                      <h3>We currently accept BTC, BCH, and $USD</h3>
+                      <p>
+                        If there is a payment method you would like to use
+                        please let us know
+                      </p>
+                      <p>
+                        Once your payment method is complete then your key will
+                        be displayed!
+                      </p>
+                      <p />
+                    </Jumbotron>
+                  </div>
+
                   <div className="cryptotracker">
-                <CryptoTracker />
+                    <CryptoTracker />
                   </div>
                   <Row>
                     <Input s={6} label="First Name" />
@@ -92,6 +92,18 @@ class Payments extends React.Component {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="continue">
+              <Col m={6} s={12}>
+                <Card
+                  className="continue"
+                  textClassName="white-text"
+                 
+                  actions={<Link to="/keyDisplay">Continue to your key</Link>}
+                >
+                  
+                </Card>
+              </Col>
             </div>
 
             <Footer
