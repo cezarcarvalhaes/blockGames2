@@ -1,6 +1,7 @@
+import React from "react";
 import axios from 'axios';
 
-export default {
+const API =  {
     // Gets all books
     getGames: function() {
       return axios.get("/api/games");
@@ -18,3 +19,5 @@ export default {
       return axios.post("/api/games", gameData);
     }
   };
+  
+  export default API;

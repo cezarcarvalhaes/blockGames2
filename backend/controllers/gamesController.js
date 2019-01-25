@@ -1,12 +1,18 @@
+const mongoose = require("mongoose");
+
 const db = require("../models");
 
 // Defining methods for the booksController
 module.exports = {
   findAll: function(req, res) {
+    console.log("dbGame"+ JSON.stringify(req.query))
     db.Game
-      .find(req.query)
-      .sort({ date: -1 })
-      .then(dbModel => res.json(dbModel))
+      .find({}).exec()
+      // .sort({ date: -1 })
+      .then(dbModel => {
+        console.log(dbModel)
+        res.json(dbModel)} 
+    )
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {

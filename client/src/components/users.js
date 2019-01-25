@@ -29,7 +29,7 @@ class Users extends React.Component {
           <div className="App-header">
             <div className="svgs">
               <img src={logo} className="App-logo" alt="logo" />
-              <h2>Select a product to purchase!</h2>
+              <h2>Developers please contact us!</h2>
             </div>
           </div>
           <div className="form">

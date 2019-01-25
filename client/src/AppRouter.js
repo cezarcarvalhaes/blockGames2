@@ -27,7 +27,7 @@ import MediaCard from "./components/Card/card";
 import Form from "./components/Form/form";
 import products from "./products.json";
 import Card2 from "./components/Card/card2";
-import API from "./routes/routes";
+import API from "./API";
 import Products from "./components/product";
 
 import Payments from "./components/payments";

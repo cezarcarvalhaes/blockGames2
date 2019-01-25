@@ -19,7 +19,10 @@ import {
 import Crypto from "./crypto";
 import CheckoutField from "./checkoutField";
 import Checkout from "../Checkout";
-import { Jumbotron, Container } from "reactstrap";
+
+// import { Jumbotron } from "reactstrap";
+// import { Container } from "reactstrap";
+import CryptoTracker from "./cryptotracker";
 
 class Payments extends React.Component {
   render() {
@@ -36,21 +39,23 @@ class Payments extends React.Component {
             <div className="parent">
               <div className="checkoutForm">
                 <div className="instuctions">
-                  <div>
+                  
                     <div className="jumbo">
-                      <Jumbotron fluid>
-                        <Container fluid>
-                          <h1 className="display-3">
-                            We currently accept BTC, BCH, and $USD{" "}
-                          </h1>
-                          <p className="lead">
-                            You can checkout with our field and save your info
-                            to your account, or just checkout but clicking the
-                            payment button!
-                          </p>
-                        </Container>
-                      </Jumbotron>
+                      {/* <Jumbotron>
+                        <h1>Hello, world!</h1>
+                        <p>
+                          This is a simple hero unit, a simple jumbotron-style
+                          component for calling extra attention to featured
+                          content or information.
+                        </p>
+                        <p>
+                          
+                        </p>
+                      </Jumbotron> */}
                     </div>
+                  
+                  <div className="cryptotracker">
+                <CryptoTracker />
                   </div>
                   <Row>
                     <Input s={6} label="First Name" />

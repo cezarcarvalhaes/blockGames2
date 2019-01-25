@@ -4,7 +4,7 @@ import App from "../App";
 import "../App.css"
 import logo from "../blockchain.svg"
 import Card2 from "./Card/card2";
-import API from "../routes/routes";
+import API from "../API";
 import {
   Button,
   Icon,

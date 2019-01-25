@@ -77,6 +77,35 @@ footer.page-footer {
   text-align: center;
   padding: 20px;
 }
+
+
+
+div#crypto-container {
+  background:white;
+  width: 70%;
+  margin: 0 auto 4px auto;
+  padding: 1em;
+  box-shadow: 1px 1px 0 lightgrey;
+}
+
+span.left {
+  font-weight: bold;
+}
+
+span.right {
+  float:right;
+}
+.cryptotracker{
+  padding:20px;
+}
+#jumbo-text{
+  color:white;
+}
+.crypto-ui {
+  text-align: center;
+  color: white;
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

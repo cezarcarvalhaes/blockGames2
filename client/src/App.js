@@ -16,6 +16,11 @@ import {
   Navbar,
   NavItem
 } from "react-materialize";
+import { Jumbotron } from "react-bootstrap";
+import axios from 'axios';
+
+import CryptoTracker from "./components/cryptotracker";
+
 
 class App extends Component {
   state={
@@ -67,15 +72,25 @@ class App extends Component {
             </Slide>
           </Slider>
         </div>
-        <p className="App-intro">
-          <Checkout
-            name={"The Road to learn React"}
-            description={"Open Source React Book"}
-            amount={1}
-          />
-        </p>
+       
         </main>
+<div className="crypto-ui">
+<Jumbotron>
+  <h4>We believe that the blockchain is the technology that is going to shape the future</h4>
+  <p id="jumbo-text">
+   With that comes a certain responsibility to the community, and we will always do our best to support all payment methods.
+  </p>
+  <p>
+    These prices update whenever you come to our website so you can make an informed decision on how you would like to purchase.
+    </p>
+  
+  <p>
+    
+  </p>
+</Jumbotron>
 
+</div>
+<CryptoTracker />
         <Footer
           copyrights="blockGames Copyright 2019"
           moreLinks={
