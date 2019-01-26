@@ -7,13 +7,16 @@ module.exports = {
   findAll: function(req, res) {
     console.log("dbGame"+ JSON.stringify(req.query))
     db.Game
-      .find({}).exec()
+      .find({})
       // .sort({ date: -1 })
       .then(dbModel => {
-        console.log(dbModel)
+        console.log("quote"+dbModel)
         res.json(dbModel)} 
     )
-      .catch(err => res.status(422).json(err));
+      .catch(err => {
+        console.log("error"+err);
+        res.status(422).json(err)
+      });
   },
   findById: function(req, res) {
     db.Game

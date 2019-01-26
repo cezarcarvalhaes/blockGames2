@@ -19,10 +19,10 @@ import Crypto from "./crypto";
 import CheckoutField from "./checkoutField";
 import Checkout from "../Checkout";
 
-import { Jumbotron } from "reactstrap";
-import { Container } from "reactstrap";
+// import { Jumbotron } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import CryptoTracker from "./cryptotracker";
-import { Button } from "reactstrap";
+// import { Button } from "react-boostrap";
 
 class Payments extends React.Component {
   render() {
@@ -40,7 +40,7 @@ class Payments extends React.Component {
               <div className="checkoutForm">
                 <div className="instuctions">
                   <div className="jumbo">
-                    <Jumbotron>
+                    {/* <Jumbotron>
                       <h3>We currently accept BTC, BCH, and $USD</h3>
                       <p>
                         If there is a payment method you would like to use
@@ -51,7 +51,7 @@ class Payments extends React.Component {
                         be displayed!
                       </p>
                       <p />
-                    </Jumbotron>
+                    </Jumbotron> */}
                   </div>
 
                   <div className="cryptotracker">

@@ -5,7 +5,7 @@ import "../App.css";
 import logo from "../blockchain.svg";
 import { Footer } from "react-materialize"
 import Recaptcha from "./recaptcha";
-import { Button } from "reactstrap";
+// import { Button } from "reactstrap";
 
 class keyDisplay extends React.Component {
   render() {

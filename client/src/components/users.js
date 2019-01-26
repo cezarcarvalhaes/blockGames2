@@ -32,8 +32,11 @@ class Users extends React.Component {
               <h2>Developers please contact us!</h2>
             </div>
           </div>
+          <div className="container">
+
           <div className="form">
             <Form />
+          </div>
           </div>
           <Footer
             copyrights="blockGames Copyright 2019"

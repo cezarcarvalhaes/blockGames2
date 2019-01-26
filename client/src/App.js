@@ -35,6 +35,8 @@ class App extends Component {
   render() {
     return (
       <div className="root">
+      <div className="container">
+
       <main>
       
         <div className="App-header">
@@ -77,6 +79,7 @@ class App extends Component {
         </div>
        
         </main>
+        </div>
 <div className="crypto-ui">
 <Jumbotron>
   <h4>We believe that the blockchain is the technology that is going to shape the future</h4>

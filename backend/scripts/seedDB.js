@@ -25,7 +25,7 @@ const gameSeed = [
   },
   {
     
-    "name": "Nihilumbra",
+    "title": "Nihilumbra",
     "developer":"Unknown",
     "description": "Discover the beautiful world of Nihilumbra and join Born on his adventure to find himself whilst trying to escape from his inevitable curse. Born was created from the absolute nothingness: The Void. But somehow he separates himself from the black emptiness and appears in the world.",
     "image":
