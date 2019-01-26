@@ -23,6 +23,7 @@ import Checkout from "../Checkout";
 // import { Container } from "react-bootstrap";
 import CryptoTracker from "./cryptotracker";
 // import { Button } from "react-boostrap";
+import { Jumbotron } from "react-bootstrap";
 
 class Payments extends React.Component {
   render() {
@@ -52,6 +53,21 @@ class Payments extends React.Component {
                       </p>
                       <p />
                     </Jumbotron> */}
+                    <Jumbotron>
+                      <h3>
+                      We currently accept BTC, BCH, and $USD
+                      </h3>
+                      <p id="jumbo-text">
+                      If there is a payment method you would like to use
+                        please let us know
+                      </p>
+                      <p>
+                      Once your payment method is complete then your key will
+                        be displayed!
+                      </p>
+
+                      <p />
+                    </Jumbotron>
                   </div>
 
                   <div className="cryptotracker">
@@ -98,11 +114,8 @@ class Payments extends React.Component {
                 <Card
                   className="continue"
                   textClassName="white-text"
-                 
                   actions={<Link to="/keyDisplay">Continue to your key</Link>}
-                >
-                  
-                </Card>
+                />
               </Col>
             </div>
 
