@@ -14,19 +14,19 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 app.use(routes);
-mongoose.set('debug', function(coll, method, query, doc, options) {
-  let set = {
-      coll: coll,
-      method: method,
-      query: query,
-      doc: doc,
-      options: options
-  };
+// mongoose.set('debug', function(coll, method, query, doc, options) {
+//   let set = {
+//       coll: coll,
+//       method: method,
+//       query: query,
+//       doc: doc,
+//       options: options
+//   };
 
-  log.info({
-      dbQuery: set
-  });
-});
+//   log.info({
+//       dbQuery: set
+//   });
+// });
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/blockGames" , function(err, db) {
   if (err) {
