@@ -4,7 +4,7 @@
   "description": "",
   "engines": {
     "node": "10.3.0",
-    "npm": "6.7.0"
+    "npm": "6.1.0"
   },
   "main": "server.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "seed": "node backend/scripts/seedDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "postInstall": "react-scripts build"
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
