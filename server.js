@@ -4,6 +4,10 @@ const mongoose = require("mongoose");
 const routes = require("./backend/routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+const cors = require('cors');
+const bodyParser = require('body-parser');
+
+const CORS_WHITELIST = require('./backend/constants/frontend.js');
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));

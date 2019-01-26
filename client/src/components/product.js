@@ -24,17 +24,10 @@ class Products extends React.Component {
    games: []
  }
  componentDidMount() {
-   API.getGames().then(
-     function(res) {
-           console.log(res);
-           this.setState(
-             {
-               games: res.data
-             }
-           )
-    }
-  
-   )
+  API.getGames().then((res) => {
+    console.log(res);
+      this.setState({games: res.data})
+    });
  }
 
   render() {
