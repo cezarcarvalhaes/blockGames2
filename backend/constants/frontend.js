@@ -1,8 +1,8 @@
 const FRONTEND_DEV_URLS = [ 'http://localhost:3000' ];
 
 const FRONTEND_PROD_URLS = [
-  'https://www.cryptic-citadel-68388.herokuapp.com',
-  'https://cryptic-citadel-68388.herokuapp.com'
+  'https://enigmatic-everglades-84469.herokuapp.com/',
+  // 'https://cryptic-citadel-68388.herokuapp.com'
 ];
 
 module.exports = process.env.NODE_ENV === 'production'
