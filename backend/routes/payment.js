@@ -8,16 +8,16 @@ const postStripeCharge = res => (stripeErr, stripeRes) => {
   }
 }
 
-const paymentApi = app => {
-  app.get('/', (req, res) => {
+const paymentApi = stripe => {
+  app.get('/stripe', (req, res) => {
     res.send({ message: 'Hello Stripe checkout server!', timestamp: new Date().toISOString() })
   });
 
-  app.post('/', (req, res) => {
+  app.post('/stripe', (req, res) => {
     stripe.charges.create(req.body, postStripeCharge(res));
   });
 
-  return app;
+  return stripe;
 };
 
 module.exports = paymentApi;
