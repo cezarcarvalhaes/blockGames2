@@ -21,11 +21,11 @@ import products from "../products.json";
 
 class Products extends React.Component {
  state= {
-   games: []
+   games: products
  }
  componentDidMount() {
   API.getGames().then((res) => {
-    console.log(res);
+    console.log(res.data);
       this.setState({games: res.data})
     });
  }
@@ -41,9 +41,12 @@ class Products extends React.Component {
             </div>
           </div>
           <div className="listings">
-            <Card2 image={products[0].image} title={products[0].title} description={products[0].description} />
-            <Card2 image={products[1].image} title={products[1].title} description={products[1].description} />
-            <Card2 image = {products[2].image} title={products[2].title} description={products[2].description}/>
+            {this.state.games.map((game)=> {
+              return <Card2 image={game.image} title={game.title} description={game.description} />
+            })}
+            
+            {/* <Card2 image={products[1].image} title={products[1].title} description={products[1].description} /> */}
+            {/* <Card2 image = {products[2].image} title={products[2].title} description={products[2].description}/> */}
           </div>
         </div>
         <div>
