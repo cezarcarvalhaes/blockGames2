@@ -53,7 +53,7 @@ class LoginPage extends React.Component{
   render(){ 
 
     return(
-        <div>
+        <div className="container">
         {this.state.user ? (
           <div className="container">
             <div>Welcome, {this.state.user}!</div>
