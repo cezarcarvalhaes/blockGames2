@@ -33,6 +33,7 @@
     "mongoose": "^5.3.16",
     "path": "^0.12.7",
     "react-materialize": "^2.6.0",
+    "react-stripe-checkout": "^2.6.3",
     "react-youtube": "^7.9.0",
     "stripe": "^4.25.0"
   }
