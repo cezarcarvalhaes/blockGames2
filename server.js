@@ -1,6 +1,6 @@
-const paymentApi = require("./backend/routes/paymentApi")
+
 const express = require("express");
-const stripe = require('./backend/constants/stripe');
+const stripe = require('stripe');
 const mongoose = require("mongoose");
 const routes = require("./backend/routes");
 const app = express();
