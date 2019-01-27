@@ -1,14 +1,14 @@
 
 const express = require("express");
-const stripe = require('stripe');
+// const stripe = require('stripe');
 const mongoose = require("mongoose");
 const routes = require("./backend/routes");
 const app = express();
 const PORT = process.env.PORT || 5000;
-const cors = require('cors');
-const bodyParser = require('body-parser');
+// const cors = require('cors');
+// const bodyParser = require('body-parser');
 
-const CORS_WHITELIST = require('./backend/constants/frontend.js');
+// const CORS_WHITELIST = require('./backend/constants/frontend.js');
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -47,24 +47,24 @@ app.listen(PORT, function() {
 });
 
 
-const postStripeCharge = res => (stripeErr, stripeRes) => {
-  if (stripeErr) {
-    res.status(500).send({ error: stripeErr });
-  } else {
-    res.status(200).send({ success: stripeRes });
-  }
-}
+// const postStripeCharge = res => (stripeErr, stripeRes) => {
+//   if (stripeErr) {
+//     res.status(500).send({ error: stripeErr });
+//   } else {
+//     res.status(200).send({ success: stripeRes });
+//   }
+// }
 
-const paymentApi = stripe => {
-  app.get('/stripe', (req, res) => {
-    res.send({ message: 'Hello Stripe checkout server!', timestamp: new Date().toISOString() })
-  });
+// const paymentApi = stripe => {
+//   app.get('/stripe', (req, res) => {
+//     res.send({ message: 'Hello Stripe checkout server!', timestamp: new Date().toISOString() })
+//   });
 
-  app.post('/stripe', (req, res) => {
-    stripe.charges.create(req.body, postStripeCharge(res));
-  });
+//   app.post('/stripe', (req, res) => {
+//     stripe.charges.create(req.body, postStripeCharge(res));
+//   });
 
-  return stripe;
-};
+//   return stripe;
+// };
 
-module.exports = paymentApi;
+// module.exports = paymentApi;
