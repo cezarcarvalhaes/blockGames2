@@ -10,9 +10,9 @@ const corsOptions = {
       : callback(new Error('Not allowed by CORS'))
 };
 
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
 
-app.set('port', process.env.PORT || 3001);
+// app.set('port', process.env.PORT || 3001);
 
 const configureServer = app => {
   app.use(cors(corsOptions));
