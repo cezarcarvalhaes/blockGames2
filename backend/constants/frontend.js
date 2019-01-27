@@ -2,7 +2,7 @@
 
 const FRONTEND_PROD_URLS = [
   'https://enigmatic-everglades-84469.herokuapp.com/',
-  // 'https://cryptic-citadel-68388.herokuapp.com'
+
 ];
 
 module.exports = process.env.NODE_ENV === 'production'
