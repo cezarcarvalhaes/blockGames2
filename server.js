@@ -1,4 +1,4 @@
-import paymentApi from "./backend/routes/paymentApi";
+const paymentApi = require("./backend/routes/paymentApi")
 const express = require("express");
 const stripe = require('./backend/constants/stripe');
 const mongoose = require("mongoose");
