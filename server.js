@@ -1,5 +1,6 @@
+import paymentApi from "./backend/routes/paymentApi";
 const express = require("express");
-
+const stripe = require('./backend/constants/stripe');
 const mongoose = require("mongoose");
 const routes = require("./backend/routes");
 const app = express();
@@ -44,3 +45,26 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/blockGames" , f
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+
+
+const postStripeCharge = res => (stripeErr, stripeRes) => {
+  if (stripeErr) {
+    res.status(500).send({ error: stripeErr });
+  } else {
+    res.status(200).send({ success: stripeRes });
+  }
+}
+
+const paymentApi = stripe => {
+  app.get('/stripe', (req, res) => {
+    res.send({ message: 'Hello Stripe checkout server!', timestamp: new Date().toISOString() })
+  });
+
+  app.post('/stripe', (req, res) => {
+    stripe.charges.create(req.body, postStripeCharge(res));
+  });
+
+  return stripe;
+};
+
+module.exports = paymentApi;
