@@ -36,6 +36,6 @@
     "react-stripe-checkout": "^2.6.3",
     "react-youtube": "^7.9.0",
     "stripe": "^4.25.0",
-    "react-bootstrap":"^0.32.4"
+    "react-bootstrap": "^0.32.4"
   }
 }

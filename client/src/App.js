@@ -20,17 +20,17 @@ import { Jumbotron } from "react-bootstrap";
 import axios from 'axios';
 
 import CryptoTracker from "./components/cryptotracker";
-import { loadReCaptcha } from "react-recaptcha-google";
+// import { loadReCaptcha } from "react-recaptcha-google";
 
 
 class App extends Component {
-  state={
+  // state={
 
-  }
+  // }
 
-  componentDidMount() {
-    loadReCaptcha();
-  }  
+  // componentDidMount() {
+  //   loadReCaptcha();
+  // }  
   
   render() {
     return (
