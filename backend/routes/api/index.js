@@ -2,7 +2,7 @@ const router = require("express").Router();
 const gameRoutes = require("./games");
 // const path = require("path");
 // // const router = require("express").Router();
-// const apiRoutes = require("./routes");
+const apiRoutes = require("./games");
 // import path from "path";
 
 // import apiRoutes from "./routes";
