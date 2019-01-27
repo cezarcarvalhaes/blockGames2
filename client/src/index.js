@@ -8,7 +8,7 @@ import ProductPage from "./components/product"
 import AppRouter from "./AppRouter"
 ReactDOM.render(
   <AppRouter>
-  
+  <App />
   </AppRouter>,
   document.getElementById("root")
 );
