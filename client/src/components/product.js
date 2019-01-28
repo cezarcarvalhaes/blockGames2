@@ -16,12 +16,12 @@ import {
   Navbar,
   NavItem
 } from "react-materialize";
-import products from "../products.json";
+
 
 
 class Products extends React.Component {
  state= {
-   games: products
+   games: []
  }
  componentDidMount() {
   API.getGames().then((res) => {

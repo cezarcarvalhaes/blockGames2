@@ -12,7 +12,7 @@ import {
   NavItem
 } from "react-materialize";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import products from "../../products.json";
+
 import { withStyles } from "@material-ui/core";
 import AppRouter from "../../AppRouter";
 import router from "../../API";

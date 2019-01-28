@@ -20,7 +20,7 @@ import { Jumbotron } from "react-bootstrap";
 import axios from 'axios';
 
 import CryptoTracker from "./components/cryptotracker";
-import paymentApi from "./backend/routes/paymentApi";
+// import paymentApi from "./backend/routes/paymentApi";
 // import { loadReCaptcha } from "react-recaptcha-google";
 
 

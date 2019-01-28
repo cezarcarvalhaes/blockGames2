@@ -115,6 +115,7 @@ class Payments extends React.Component {
                   className="continue"
                   textClassName="white-text"
                   actions={<Link to="/keyDisplay">Continue to your key</Link>}
+                  onClick={this.handleFormSubmit}
                 />
               </Col>
             </div>
