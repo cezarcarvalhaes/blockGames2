@@ -33,9 +33,10 @@ app.use(routes);
 //   });
 // });
 // Connect to the Mongo DB
+console.log(`mongo uri: ${process.env.MONGODB_URI}`)
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/blockGames" , function(err, db) {
   if (err) {
-      console.log('Unable to connect to the server. Please start the server. Error:', err);
+      console.log('Unable to connect to the mongo server. Please start the server. Error:', err);
   } else {
       console.log('Connected to Server successfully!');
   }
