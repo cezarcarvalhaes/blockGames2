@@ -25,11 +25,11 @@ class CryptoTracker extends React.Component {
     render() {
         return (
           <div className="cryptotracker">
-            {Object.keys(this.state.cryptos).map((key) => (
+            {Object.keys(this.state.cryptos).map((key, index) => (
     
-              <div id="crypto-container">
+              <div id="crypto-container" key={index}>
                 <span className="left">{key}</span>
-                <span className="right"><NumberFormat value={this.state.cryptos[key].USD} displayType={'text'} decimalPrecision={2} thousandSeparator={true} prefix={'$'} /></span>
+                <span className="right"><NumberFormat value={this.state.cryptos[key].USD} displayType={'text'} decimalScale={2} thousandSeparator={true} prefix={'$'} /></span>
               </div>
     
             ))}
